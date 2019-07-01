@@ -8,6 +8,7 @@ Source0:	https://github.com/intel/gmmlib/archive/%{name}-%{version}/intel-gmmlib
 # Source0-md5:	4004db0e2efcff2d2b3702f59c8ce0b2
 URL:		https://github.com/intel/gmmlib/
 BuildRequires:	cmake >= 3.1
+ExclusiveArch:	%{ix86} %{x8664}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
