@@ -1,11 +1,11 @@
 Summary:	Intel Graphics Memory Management Library
 Name:		intel-gmmlib
-Version:	19.2.1
+Version:	22.8.1
 Release:	1
 License:	MIT
 Group:		Libraries
 Source0:	https://github.com/intel/gmmlib/archive/%{name}-%{version}/intel-gmmlib-%{version}.tar.gz
-# Source0-md5:	4004db0e2efcff2d2b3702f59c8ce0b2
+# Source0-md5:	e92a8d2ae3c620341514a0fa558e6402
 URL:		https://github.com/intel/gmmlib/
 BuildRequires:	cmake >= 3.1
 ExclusiveArch:	%{ix86} %{x8664}
@@ -54,8 +54,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/libigdgmm.so.9.*.*
-%ghost %attr(755,root,root) %{_libdir}/libigdgmm.so.9
+%attr(755,root,root) %{_libdir}/libigdgmm.so.12.*.*
+%ghost %attr(755,root,root) %{_libdir}/libigdgmm.so.12
 
 %files devel
 %defattr(644,root,root,755)
